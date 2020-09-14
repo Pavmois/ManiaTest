@@ -1,0 +1,17 @@
+.menu-main__title {
+    position: relative;
+    text-align: center;
+    font-family: Inter-ExtraBold;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    color: #ffff;
+    top: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .menu-main__title  {
+        font-size: 54px;
+    }
+  }
+  

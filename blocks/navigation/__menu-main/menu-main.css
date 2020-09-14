@@ -1,0 +1,71 @@
+@import url(./menu-main__title/menu-main__title.css);
+
+.menu-main {
+  position: relative;
+  display: flex;
+  }
+
+
+.menu-main a {
+  text-decoration: none;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #d8d8d8;}
+.menu-main a.current, .menu-main a:hover{color: #f12f2f;;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  right: 50%;
+  bottom: 12px;
+  left: 50%;
+  background: #f12f2f; 
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+
+@media screen and (min-width: 1620px) {
+  .menu-main  {
+    margin-left: 550px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .menu-main  {
+    margin-left: 300px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-main  {
+    margin-left: 10%;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .menu-main  {
+      width: 75%;
+      flex-direction: column;
+      margin-right: auto;
+      margin-left: auto;
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  .menu-main  {
+      width: 60%;
+  }
+}
+

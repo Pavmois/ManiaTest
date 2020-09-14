@@ -1,0 +1,94 @@
+@import url('./__container/footer__container.css');
+@import url('./copyright/footer__copyright.css');
+.footer {
+    position: relative;
+    margin-top: 64px;
+    bottom: 5px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.548);
+    display: flex;
+    flex-shrink: 0;
+    flex: 0 0 auto;
+}
+
+@font-face {
+    src: url("../fonts/Inter/Inter-Medium.woff") format("woff"), url("../fonts/Inter/Inter-Medium.woff2") format("woff2");
+    font-family: 'Inter';
+}
+
+@font-face {
+    src: url("../fonts/Inter/Inter-Bold.woff") format("woff"), url("../fonts/Inter/Inter-Bold.woff2") format("woff2");
+    font-family: 'Inter-Bold';
+}
+
+@font-face {
+    src: url("../fonts/Inter/Inter-ExtraBold.woff") format("woff"), url("../fonts/Inter/Inter-ExtraBold.woff2") format("woff2");
+    font-family: 'Inter-ExtraBold';
+}
+
+@media screen and (min-width: 1025px) {
+    .footer {
+        width: 100%;
+        bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+    margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+    margin-left: 0px;
+    bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .footer {
+        width: 75%;
+        min-height: 312px;
+        margin-top: 64px;
+        margin-left: 23px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .footer {
+        width: 75%;
+        min-height: 312px;
+        margin-top: 64px;
+        margin-left: 23px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer {
+        width: 60%;
+        min-height: 312px;
+        margin-top: 64px;
+        margin-left: 23px;
+    }
+}
+
+/* Эффект дождя */
+.rain {
+	position: fixed;
+	width: 1px; /* Ширина капли */
+	height: 3px; /* Высота капли */
+	top: -3px;
+	background-color: #fff; /* Цвет капли */
+	animation: rain 2.2s linear infinite;
+	z-index: 99;
+	border-radius: 1px;
+}
+
+@keyframes rain {
+	to {
+		transform: translate3d(200px, 1000px, 0); /* Первое значение (200px) это направление дождя, где: 0 - вниз, положительное число - вправо, отрицательное - влево */
+	}
+}

@@ -1,0 +1,70 @@
+@import url('../comments/_container/song.css');
+@import url('../comments/_container/comments__container.css');
+.comments {
+    flex: 1 0 auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+@font-face {
+    src: url("../fonts/Inter/Inter-Medium.woff") format("woff"), url("../fonts/Inter/Inter-Medium.woff2") format("woff2");
+    font-family: 'Inter';
+}
+
+@font-face {
+    src: url("../fonts/Inter/Inter-Bold.woff") format("woff"), url("../fonts/Inter/Inter-Bold.woff2") format("woff2");
+    font-family: 'Inter-Bold';
+}
+
+@font-face {
+    src: url("../fonts/Inter/Inter-ExtraBold.woff") format("woff"), url("../fonts/Inter/Inter-ExtraBold.woff2") format("woff2");
+    font-family: 'Inter-ExtraBold';
+}
+
+@media screen and (min-width: 1280px) {
+    .comments {
+        width: 90%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .comments {
+        width: 90%;
+        margin-left: 48px;
+        margin-top: 100px;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .comments {
+        width: 86%;
+        margin-left: 54px;
+        margin-top: 100px;
+       
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .comments {
+        width: 91.5%;
+        margin-left: 16px;
+        margin-top: 64px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .comments {
+        width: 90%;
+        margin-left: 16px;
+        margin-top: 64px;
+    }
+}

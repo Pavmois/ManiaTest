@@ -1,0 +1,44 @@
+@import url('./__link/footer__link.css');
+
+.links__icons {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    margin-top: 5px;
+}
+
+.links {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 1024px) {
+    .links {
+        margin-right: 40px;
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .links {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .links {
+        width: 10%;
+        min-height: 243px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .links {
+        width: 10%;
+        min-height: 243px;
+        flex-direction: column;
+    }
+}

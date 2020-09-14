@@ -1,0 +1,43 @@
+@import url(./__menu-main/menu-main.css);
+@import url(./__menu-main/links__icons.css);
+@import url(./logo/logo.css);
+
+.navigation {
+    width: 100%;
+    position: relative;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.548);
+}
+
+@media screen and (min-width: 768px) {
+    .navigation {
+        max-width: 100%;
+        margin-top: 35px;
+        margin-bottom: 0px;
+        
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .navigation {
+        width: 75%;
+        flex-direction: column;
+        
+    }
+  }
+  
+  @media screen and (max-width: 375px) {
+    .navigation {
+        width: 75%;
+        flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .navigation {
+        width: 60%;
+    }
+  }

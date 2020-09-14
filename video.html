@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./vendor/normalize.css">
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("a[href*=#]").on("click", function(e){
+              var anchor = $(this);
+              $('html, body').stop().animate({
+                  scrollTop: $(anchor.attr('href')).offset().top
+              }, 1200);
+              e.preventDefault();
+              return false;
+          });
+      });
+      </script>
+    <title>МанияВнутри</title>
+</head>
+
+<body>
+    <a href="#logo" class="comback__button">Вернуться к началу страницы</a>
+
+    <div class="page">
+
+        <img class="logo"  src="./images/logo/logo_final.png">
+        <section class="navigation">
+
+            <div class="logo">
+            </div>
+
+            <div class="menu-main">
+                <a class="menu-main__title" href="index.html">О нас</a>
+                <a class="menu-main__title" href="music.html">Музыка</a>
+                <a class="menu-main__title" href="photo.html">Галерея</a>
+                <a class="menu-main__title" href="video.html">Видео</a>
+                <a class="menu-main__title" href="contacts.html">Контакты</a>
+            </div>
+
+            <div class="links">
+                <a href="https://www.instagram.com/maniavnutri/" ><img  class="links__icons" src="./images/logo/1492718764-instagram_83597.svg"></a>
+                <a href="https://vk.com/maniavnutri" ><img class="links__icons"  src="./images/logo/1492718766-vk_83600.svg"></a>
+                <a href="https://www.youtube.com/channel/UCPEz9M1z2O1OuMydeL0UbaA" ><img class="links__icons"  src="./images/logo/1492718751-youtube_83605.svg"></a>
+                <a href="https://www.facebook.com/maniavnutri/" ><img class="links__icons"  src="./images/logo/1492718745-facebook_83608.svg"></a>
+            </div>
+        </section>
+
+
+        <section class="video">
+
+            <div class="video__container">
+                <div class="container__item">
+                    <iframe  width="560" height="315" src="https://www.youtube.com/embed/a_GYidttEMs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+
+            </div>
+
+            <div class="video__container">
+                <div class="container__item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kmAptrz4XV4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+ 
+            </div>
+
+        </section>
+    
+
+        <footer class="footer" id=" ">
+            <h2 class="footer__copyright">&copy; 2020. Павел Моисеев</h2>
+        </footer>
+    </div>
+</body>
+
+</html>
